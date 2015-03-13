@@ -1,0 +1,39 @@
+{
+  "name": "replate",
+  "version": "1.0.0",
+  "description": "React static site boilerplate with Rebass and Basscss",
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.12.2",
+    "react-html": "0.0.4",
+    "react-router": "^0.12.4",
+    "static-react": "^1.0.1"
+  },
+  "devDependencies": {
+    "file-loader": "^0.8.1",
+    "http-server": "^0.7.4",
+    "json-loader": "^0.5.1",
+    "jsx-loader": "^0.12.2",
+    "lodash": "^3.1.0",
+    "parallelshell": "^1.0.4",
+    "reactify": "^1.0.0",
+    "watch": "^0.14.0",
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.7.0"
+  },
+  "scripts": {
+    "build": "node build",
+    "watch:build": "watch 'npm run build' ./components",
+    "js": "webpack ./app.js bundle.js",
+    "watch:js": "watch 'npm run js'",
+    "serve": "http-server -p 8000",
+    "dev": "webpack-dev-server --lazy true --progress --colors --port 8090",
+    "start": "npm run serve | npm run dev"
+  },
+  "keywords": [
+    "React",
+    "Boilerplate",
+    "Webpack"
+  ]
+}
